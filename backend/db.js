@@ -1,7 +1,7 @@
 const { default: mongoose } = require("mongoose");
 
 
-mongoose.connect("mongodb+srv://gangasingh1734:UhHWJqlIl0p0phWp@cluster0.9r9p89k.mongodb.net/");
+mongoose.connect("mongodb://localhost:27017");
 
 
 const todoschema = mongoose.Schema({
