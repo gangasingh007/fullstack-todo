@@ -11,7 +11,7 @@
     - Extract all the files
   
   #### Step 2 : Backned Setup:-
-  Run the Following commands
+ ##### Run the Following commands
     - cd Backend
     - npm init -y 
     - npm install (to download all the dependencies)
