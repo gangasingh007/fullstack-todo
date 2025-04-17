@@ -21,14 +21,12 @@ const Todo = () => {
       return todo
     })
     setTodos(updatedTodos)
-  }
-
+  } 
   return (
     <div className="todo-list-container">
       <button className="fetch-button" onClick={fetchTodos}>
         Get All the Todos
-      </button>
-
+      </button>   
       {todos.map((todo, index) => (
         <div className="todo-card" key={index}>
           <h3>{`Todo Title: ${todo.title}`}</h3>

@@ -37,18 +37,18 @@ app.get("/todos", async (req, res) => {
     });
 });
 
-// Update Todo to Completed
-app.get("/delete", async (req, res) => {
-   const todolist = await todo.deleteMany({
-    completed :{
-        "$in":true
-    }
-   })
-   res.status(200).json({
-    todos: todolist
-});
-});
-
+app.post("/delete", async (req, res) => {
+    await todo.deleteMany({
+      completed: true,
+    });
+  
+    const remainingTodos = await todo.find({}); // Fetch updated list
+  
+    res.status(200).json({
+      todos: remainingTodos,
+    });
+  });
+  
 app.listen(3000, () => {
     console.log("The server is running on port 3000");
 });
