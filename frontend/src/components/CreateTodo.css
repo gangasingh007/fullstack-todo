@@ -1,0 +1,45 @@
+/* CreateTodo.css */
+
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .todo-input {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #10b981; /* emerald border */
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s ease;
+  }
+  
+  .todo-input::placeholder {
+    color: #94a3b8; /* muted slate placeholder */
+  }
+  
+  .todo-input:focus {
+    border-color: #34d399; /* emerald-400 */
+    box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.4);
+  }
+  
+  .todo-button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0f172a;
+    background-color: #10b981; /* emerald-500 */
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .todo-button:hover {
+    background-color: #059669; /* emerald-600 */
+    transform: scale(1.02);
+  }
+  
