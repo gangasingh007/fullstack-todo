@@ -19,8 +19,8 @@
     - node index.js
 
   #### Step 3 : Frontend Setup:-
-    ##### Open a new terminal
-      ##### Run the following commands 
+    Open a new terminal
+      #####Run the following commands 
       - cd frontend
       - npm install (to download all the dependencies)
       - npm run dev
