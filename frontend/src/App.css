@@ -13,7 +13,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    background-color: #000000df; /* dark background */
+    background-color: #000000; /* dark background */
   }
   
   .app-title {
