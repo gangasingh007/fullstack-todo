@@ -8,27 +8,32 @@ const CreateTodo = () => {
   const [description, setdescription] = useState("")
 
   const updateTodo = async () => {
-    try {
-      const response = await fetch("http://localhost:3000/todo", {
-        method: "POST",
-        body: JSON.stringify({
-          title: title,
-          description: description,
-        }),
-        headers: {
-          "Content-type": "application/json",
-        },
-      })
-
-      if (response.ok) {
-        toast.success("✅ Todo added!")
-        settitle("")         // Clear inputs after success
-        setdescription("")
-      } else {
-        toast.error("❌ Failed to add todo!")
-      }
-    } catch (err) {
-      toast.error("⚠️ Something went wrong!")
+    if (!(title === "" || description=="")){
+      try {
+        const response = await fetch("http://localhost:3000/todo", {
+          method: "POST",
+          body: JSON.stringify({
+            title: title,
+            description: description,
+          }),
+          headers: {
+            "Content-type": "application/json",
+          },
+        })
+  
+        if (response.ok) {
+          toast.success("Todo added!")
+          settitle("")         // Clear inputs after success
+          setdescription("")
+        } else {
+          toast.error(" Failed to add todo!")
+        }
+      } catch (err) {
+        toast.error("Something went wrong!")
+      } 
+    }
+    else{
+      toast.error("All the Fields Are Required")
     }
   }
 
