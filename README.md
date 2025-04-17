@@ -2,7 +2,7 @@
 ### It has the following features:
   - User can create a todo.
   - User can see all the todos.
-  - User can the todo as done
+  - User can mark the todo as done
 
 
 ### Steps to Initializing the Project
@@ -11,7 +11,7 @@
     - Extract all the files
   
   #### Step 2 : Backned Setup:-
-  Run the Following commands
+ ##### Run the Following commands
     - cd Backend
     - npm init -y 
     - npm install (to download all the dependencies)
@@ -20,7 +20,8 @@
 
   #### Step 3 : Frontend Setup:-
     Open a new terminal
-      Run the following commands 
+    Run the following commands 
       - cd frontend
       - npm install (to download all the dependencies)
+      - npm install --save react-toastify
       - npm run dev
