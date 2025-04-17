@@ -6,11 +6,11 @@
 
 
 ### Steps to Initializing the Project
-  Step 1: Download the Repositry
+  #### Step 1: Download the Repositry
     - Download the zip file 
     - Extract all the files
   
-  Step 2 : Backned Setup:-
+  #### Step 2 : Backned Setup:-
   Run the Following commands
     - cd Backend
     - npm init -y 
@@ -18,7 +18,7 @@
     - npm install express cors mongoose zod (to download all the necessary packages)
     - node index.js
 
-  Step 2 : Frontend Setup:-
+  #### Step 3 : Frontend Setup:-
     Open a new terminal
       Run the following commands 
       - cd frontend
