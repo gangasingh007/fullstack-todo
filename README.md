@@ -6,22 +6,22 @@
 
 
 ### Steps to Initializing the Project
-  #### Step 1: Download the Repositry
-    - Download the zip file 
-    - Extract all the files
+#### Step 1: Download the Repositry
+  - Download the zip file 
+  - Extract all the files
   
-  #### Step 2 : Backned Setup:-
- ##### Run the Following commands
-    - cd Backend
-    - npm init -y 
-    - npm install (to download all the dependencies)
-    - npm install express cors mongoose zod (to download all the necessary packages)
-    - node index.js
+#### Step 2 : Backned Setup:-
+##### Run the Following commands
+  - cd Backend
+  - npm init -y 
+  - npm install (to download all the dependencies)
+  - npm install express cors mongoose zod (to download all the necessary packages)
+  - node index.js
 
-  #### Step 3 : Frontend Setup:-
-    Open a new terminal
-    Run the following commands 
-      - cd frontend
-      - npm install (to download all the dependencies)
-      - npm install --save react-toastify
-      - npm run dev
+#### Step 3 : Frontend Setup:-
+  Open a new terminal
+  Run the following commands 
+  - cd frontend
+  - npm install (to download all the dependencies)
+  - npm install --save react-toastify
+  - npm run dev
