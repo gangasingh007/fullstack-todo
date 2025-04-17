@@ -38,24 +38,15 @@ app.get("/todos", async (req, res) => {
 });
 
 // Update Todo to Completed
-app.put("/completed", async (req, res) => {
-    const updatepayload = req.body;
-    const parsedpayload = UpdateTodo.safeParse(updatepayload);
-
-    if (!parsedpayload.success) {
-        return res.status(411).json({
-            msg: "You sent the wrong inputs"
-        });
+app.get("/delete", async (req, res) => {
+   const todolist = await todo.deleteMany({
+    completed :{
+        "$in":true
     }
-
-    await todo.updateOne(
-        { _id: updatepayload.id }, 
-        { $set: { completed: true } }
-    );
-
-    res.status(200).json({
-        msg: "Todo marked as completed"
-    });
+   })
+   res.status(200).json({
+    todos: todolist
+});
 });
 
 app.listen(3000, () => {
