@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #0f172a; 
     color: #f8fafc; /* light text */
   }
@@ -13,7 +13,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    background-color: #0f172a; /* dark background */
+    background-color: #000000df; /* dark background */
   }
   
   .app-title {
@@ -31,11 +31,12 @@ body {
   }
   
   .todo-wrapper {
-    background-color: #1e293b; /* slate-800-ish */
+    background-color: #000000; /* slate-800-ish */
     padding: 2rem;
     border-radius: 1rem;
-    box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
+    box-shadow: 0px 0px 50px rgba(16, 185, 129, 0.2);
     width: 100%;
     max-width: 500px;
+    border: 1px solid  rgba(16, 185, 129, 0.441);
   }
   
